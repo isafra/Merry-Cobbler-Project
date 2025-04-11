@@ -1,51 +1,77 @@
-<div class="container-fluid lg px-0">
-    <div class="row align-items-center">
-        <div class="col">
-            <img src="img/frank3.jpg" class="float-start" alt="picture of a dog">
+<section>
+    <div class="container">
+    <div class="card my-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="img/frank3.jpg" class="img-fluid rounded-start" alt="image of a dog">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">FURRY FRIENDS WELCOME!</h5>
+              <p class="card-text">Bring your PAWS and enjoy the pub vibes together!</p>
+            </div>
+          </div>
         </div>
-         <div class="col">
-            <h1>FURRY FRIENDS WELCOME!</h1><br>
-            <h2>Bring your PAWS and enjoy the pub vibes together!</h2>
+      </div>
     </div>
-</div>
-</div>
+</section>
+
 
 <style>
 
-.row {
-background-color: #05010c;
-}
-
-
-.float-start {
-   width: 30%;
-   margin-top: 20%;
-   margin-left: 60%;
-   margin-bottom: 20%;
-   box-shadow: rgba(108, 64, 6, 0.25) 0px 54px 55px, rgba(107, 63, 6, 0.25) 0px -12px 30px, rgba(108, 67, 12, 0.25) 0px 4px 6px, rgba(108, 64, 6, 0.25) 0px 12px 13px, rgba(108, 64, 7, 0.25) 0px -3px 5px;
-   
-}
-
-h1 {
-    font-size: 2.7rem;
-    font-family: "Prosto One", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    color:#ffffff;
-    margin-right: 200px;
+.container {
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 0;
-    text-align: center;
+  
+
 }
 
-h2 {
+.row {
+    background-color: rgba(20,22,41,255);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+h5 {
     font-size: 2rem;
     font-family: "Prosto One", sans-serif;
     font-weight: 600;
     font-style: normal;
     color:#ffffff;
-    margin-right:200px;
     padding: 0;
     text-align: center;
 }
 
+p {
+    font-size: 1rem;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#ffffff;
+
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+
+.img-fluid {
+ height: 20vh;
+object-fit: cover;
+}
+
+ h5 {
+    font-size: 1.5rem;
+ }
+
+p {
+    font-size: 1rem;
+}
+
+}
 </style>

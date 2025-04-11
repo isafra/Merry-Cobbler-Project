@@ -25,10 +25,10 @@
                 Menus
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Lunch Menu</a></li>
-                <li><a class="dropdown-item" href="#">Evening Menu</a></li>
-                <li><a class="dropdown-item" href="#">Brunch Menu</a></li>
-                <li><a class="dropdown-item" href="#">Sunday Menu</a></li>
+                <li><a class="dropdown-item" href="/src/layouts/lunchmenu.astro">Lunch Menu</a></li>
+                <li><a class="dropdown-item" href="/public/img/evening.png">Evening Menu</a></li>
+                <li><a class="dropdown-item" href="/public/img/brunch.png">Brunch Menu</a></li>
+                <li><a class="dropdown-item" href="/public/img/sunday.png">Sunday Menu</a></li>
               </ul>
             </li>
           </ul>
@@ -46,17 +46,15 @@
     padding-right: 80px;
     padding-top: 40px;
 
-    
-    
-    
 }
 
 .navbar a { 
     color: rgb(222, 222, 232);
     font-family: "Barlow Condensed", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
+    padding: 20px;
 }
 
 .dropdown-menu a {
@@ -67,16 +65,33 @@
     font-size: 1.4rem;
     align-items: center;
     text-align: center;
+    padding: 5px;
 }
    
 .dropdown-menu a:hover {
     background-color:rgb(165, 165, 187);
     
-  
-    
 }
 
 .navbar-toggler {
-  background-color: rgb(165, 165, 187);
+  background-color: rgb(228, 228, 237);
+  padding: 5px;
+
+
 }
+
+@media screen and (max-width:767px) {
+
+.navbar a {
+  font-size: 1rem;
+}
+
+.navbar-toggler {
+  width: 8%
+}
+
+.nav-link {
+  
+
+} 
 </style>
