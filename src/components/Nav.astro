@@ -1,97 +1,116 @@
 <header>
   <section>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid p-0">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md fixed-top justify-content-end">
+      <div class="container-fluid justify-content-end p-4">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Location</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Menus
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/src/layouts/lunchmenu.astro">Lunch Menu</a></li>
-                <li><a class="dropdown-item" href="/public/img/evening.png">Evening Menu</a></li>
-                <li><a class="dropdown-item" href="/public/img/brunch.png">Brunch Menu</a></li>
-                <li><a class="dropdown-item" href="/public/img/sunday.png">Sunday Menu</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-pills flex-column flex-md-row ms-0 ms-md-auto">
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="/gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="#">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="#">Location</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menus</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/public/img/lunchmenu.png">Lunch Menu</a></li>
+              <li><a class="dropdown-item" href="/public/img/evening.png">Evening Menu</a></li>
+              <li><a class="dropdown-item" href="/public/img/brunch.png">Brunch Menu</a></li>
+              <li><a class="dropdown-item" href="/public/img/sunday.png">Sunday Menu</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
+    </div>
   </section>
 </header>
 
+
+
 <style>
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.0);
-    padding-right: 80px;
-    padding-top: 40px;
 
+.container-fluid {
+  margin-right: 5%;
+  
 }
 
-.navbar a { 
-    color: rgb(222, 222, 232);
+.nav-pills {
+  --bs-nav-pills-link-active-bg: rgb(255, 255, 255) ;
+  --bs-nav-pills-link-active-color: #130d59;
+  --bs-border-radius: 2rem;
+  
+}
+
+.nav-item { 
+    color: rgba(20, 22, 41, 255);
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5rem;
-    padding: 20px;
-}
-
-.dropdown-menu a {
-    color:rgb(5, 5, 51);
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.4rem;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-}
-   
-.dropdown-menu a:hover {
-    background-color:rgb(165, 165, 187);
+    font-size: 1.1rem;
+    
     
 }
 
-.navbar-toggler {
-  background-color: rgb(228, 228, 237);
-  padding: 5px;
+.dropdown-menu {
+    color:rgb(225, 225, 238);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    align-items: center;
+    text-align: center;
+    
+ 
+}
 
+.dropdown-item {
+  --bs-border-radius: 2rem;
+}
+
+
+
+.dropdown-toggle {
+  background-color:rgba(20,22,41,255);
+  color: rgb(255, 240, 254);
+  --bs-border-radius: 2rem;
 
 }
 
-@media screen and (max-width:767px) {
-
-.navbar a {
-  font-size: 1rem;
+.navbar-toggler-icon {
+  width: 10px;
+  color: aliceblue;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-toggler {
-  width: 8%
+
+@media screen and (max-width:425px) {
+.nav-pills {
+  width: 25%;
+  margin-left: 30px;
 }
 
-.nav-link {
-  
+.nav-item {
+  font-size:0.5rem;
+}
 
-} 
+.dropdown-menu {
+  font-size: 0.5rem;
+  width: 15%;
+}
+
+}
+
+
 </style>

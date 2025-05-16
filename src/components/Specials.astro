@@ -2,8 +2,10 @@
 ---
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-center text-center">
+        <div class="col-12">
         <h1>"Sundays just got better — grab our Roast Beef and 1/2 Roast Chicken specials every week!"</h1>
+    </div>
     </div>
 </div>
 
@@ -11,8 +13,15 @@
 <style>
 
 .container-fluid {
-    background-color: rgba(20,22,41,255);
-    
+    background-color: rgba(20,22,41,1);
+    padding: 20px 0;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.row {
+    margin: 0;
+
 }
 
 h1 {
@@ -21,10 +30,24 @@ h1 {
     font-weight: 200;
     font-style: normal;
     color:#ffffff;
-    padding: 0;
-    margin: 20px;
-    text-align: center;
+    margin: 0;
+
+
 }
 
+@media screen and (max-width:767px) {
 
+.container-fluid {
+    padding: 10px 0;
+    margin-top: 20%;
+    margin-bottom: 20%;
+   
+}
+
+ h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    
+ }
+}
 </style>
