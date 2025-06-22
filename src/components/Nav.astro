@@ -8,24 +8,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav nav-pills flex-column flex-md-row ms-0 ms-md-auto">
           <li class="nav-item">
-            <a class="nav-link active me-3" aria-current="page" href="/">Home</a>
+            <a class="nav-link active me-3" aria-current="page" href="/Merry-Cobbler-Project/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active me-3" aria-current="page" href="/gallery">Gallery</a>
+            <a class="nav-link active me-3" aria-current="page" href="#Gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active me-3" aria-current="page" href="/history">History</a>
+            <a class="nav-link active me-3" aria-current="page" href="/Merry-Cobbler-Project/History">History</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active me-3" aria-current="page" href="/location">Location</a>
+            <a class="nav-link active me-3" aria-current="page" href="#Location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="/Merry-Cobbler-Project/Rooms">Rooms</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle me-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menus</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/img/lunchmenu.png">Lunch Menu</a></li>
-              <li><a class="dropdown-item" href="/img/evening.png">Evening Menu</a></li>
-              <li><a class="dropdown-item" href="/img/brunch.png">Brunch Menu</a></li>
-              <li><a class="dropdown-item" href="/img/sunday.png">Sunday Menu</a></li>
+              <li><a class="dropdown-item" href="/Merry-Cobbler-Project/img/lunch.png">Lunch Menu</a></li>
+              <li><a class="dropdown-item" href="/Merry-Cobbler-Project/img/evening.png">Evening Menu</a></li>
+              <li><a class="dropdown-item" href="/Merry-Cobbler-Project/img/brunch.png">Brunch Menu</a></li>
+              <li><a class="dropdown-item" href="/Merry-Cobbler-Project/img/sunday.png">Sunday Menu</a></li>
+              <li><a class="dropdown-item" href="/Merry-Cobbler-Project/img/sharingplatters.png">Platters Menu</a></li>
             </ul>
           </li>
         </ul>
@@ -40,74 +44,80 @@
 
 
 .container-fluid {
-  margin-right: 5%;
+margin-right: 5%;
   
 }
 
 .nav-pills {
-  --bs-nav-pills-link-active-bg: rgb(255, 255, 255) ;
-  --bs-nav-pills-link-active-color: #130d59;
-  --bs-border-radius: 2rem;
+--bs-nav-pills-link-active-bg: rgb(255, 255, 255) ;
+--bs-nav-pills-link-active-color: #130d59;
+--bs-border-radius: 12px;
   
 }
 
 .nav-item { 
-    color: rgba(20, 22, 41, 255);
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.1rem;
+color: rgba(20, 22, 41, 255);
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 1.1rem;
     
     
 }
 
 .dropdown-menu {
-    color:rgb(225, 225, 238);
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.1rem;
-    align-items: center;
-    text-align: center;
+color:rgb(225, 225, 238);
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 1.1rem;
+align-items: center;
+text-align: center;  
     
  
 }
 
 .dropdown-item {
-  --bs-border-radius: 2rem;
+--bs-border-radius: 2rem;
+}
+
+.dropdown-item:hover {
+background-color: #f0f0f0;
+color: #130d59;
+border-radius: 2rem;
 }
 
 
-
 .dropdown-toggle {
-  background-color:rgba(20,22,41,255);
-  color: rgb(255, 240, 254);
-  --bs-border-radius: 2rem;
+background-color:rgba(20,22,41,255);
+color: rgb(255, 240, 254);
+--bs-border-radius: 2rem;
 
 }
 
 .navbar-toggler-icon {
-  width: 10px;
-  color: aliceblue;
-  background-color: aliceblue;
-  margin: 0;
-  padding: 0;
+width: 10px;
+color: aliceblue;
+background-color: aliceblue;
+margin: 0;
+padding: 0;
+
 }
 
 
 @media screen and (max-width:425px) {
 .nav-pills {
-  width: 25%;
-  margin-left: 30px;
+width: 25%;
+margin-left: 30px;
 }
 
 .nav-item {
-  font-size:0.5rem;
+font-size:0.5rem;
 }
 
 .dropdown-menu {
-  font-size: 0.5rem;
-  width: 15%;
+font-size: 0.5rem;
+width: 15%;
 }
 
 }
