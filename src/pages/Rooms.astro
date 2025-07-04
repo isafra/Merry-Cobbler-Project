@@ -3,11 +3,15 @@ import Layout from "../layouts/Layout.astro"
 import Location from "../components/Location.astro"
 import Footer from "../components/Footer.astro"
 ---
-
-<section>
     <Layout title="Rooms">
-        <a href="/Merry-Cobbler-Project/" class="back-button">Back to Main Page</a>
     <div class="container-fluid">
+        <a href="/Merry-Cobbler-Project/" class="back-button">Back to Main Page</a>
+    <div class="main-title text-center">
+        <h1>Your Stay at The Merry Cobbler</h1>
+        <h2>- First Floor Rooms -</h2>
+    </div>    
+</div> 
+    <div class="container">
        <div class="row justify-content-center m-5 gap-5">
         <div class="col justify-content-center">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -183,7 +187,7 @@ import Footer from "../components/Footer.astro"
        </div>
     </div>
 
-        <div class="container-fluid">
+        <div class="container">
         <div class="row justify-content-center m-5 gap-5">
             <div class="col-sm-1 col-md-3 d-flex justify-content-center">
         <div class="card" style="width: 100%; max-width: 28rem;">
@@ -242,9 +246,21 @@ import Footer from "../components/Footer.astro"
     <Location/>
     <Footer/>
     </Layout>
-</section>
+
 
 <style>
+
+    .container-fluid {
+       
+    background-color: rgba(20,22,41,1);
+    text-align: end;
+    padding: 0;
+    margin-top: 7%;
+    margin-right: ;
+
+       
+    }
+  
     
     .carousel-inner img {
         width: 100%;
@@ -254,7 +270,7 @@ import Footer from "../components/Footer.astro"
 
     
     .back-button {
-        position: absolute;
+        position:relative;
         right: 20px;
         margin-top: 20px;
         background-color: rgba(20,22,41,1);
@@ -274,7 +290,26 @@ import Footer from "../components/Footer.astro"
 
     .col {
         justify-items: center;
-        margin-top: 80px;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-family: "Prosto One", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #fff;
+        margin-top: 3%;
+    
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        font-family: "Prosto One", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #fff;
+        margin-bottom: 3%;
     }
 
     h5, p, li, a {
@@ -309,6 +344,34 @@ import Footer from "../components/Footer.astro"
          box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-  
+    @media screen and (max-width:768px) {
+
+    h1, h2 {
+    font-size: 1.3rem;
+   
+    }
+
+    .back-button {
+    font-size: 0.5rem;
+    margin-right: 50px;
+    }
+
+    }
+
+    @media screen and (max-width:425px) {
+
+    h1, h2 {
+    font-size: 1rem;
+   
+    }
+
+    .back-button {
+    font-size: 0.5rem;
+    margin-right: 50px;
+    }
+
+
+    }
+
     
 </style>
