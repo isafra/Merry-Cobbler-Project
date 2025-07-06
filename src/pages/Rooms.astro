@@ -4,15 +4,16 @@ import Location from "../components/Location.astro"
 import Footer from "../components/Footer.astro"
 ---
     <Layout title="Rooms">
+    <div class="text-end">
+    <a href="/Merry-Cobbler-Project/" class="back-button">Back to Main Page</a>
+</div>
     <div class="container-fluid">
-        <a href="/Merry-Cobbler-Project/" class="back-button">Back to Main Page</a>
-    <div class="main-title text-center">
+        <div class="main-title text-center">
         <h1>Your Stay at The Merry Cobbler</h1>
-        <h2>- First Floor Rooms -</h2>
     </div>    
 </div> 
     <div class="container">
-       <div class="row justify-content-center m-5 gap-5">
+       <div class="row justify-content-center m-2 gap-5">
         <div class="col justify-content-center">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
@@ -188,7 +189,7 @@ import Footer from "../components/Footer.astro"
     </div>
 
         <div class="container">
-        <div class="row justify-content-center m-5 gap-5">
+        <div class="row justify-content-center m-2 gap-5">
             <div class="col-sm-1 col-md-3 d-flex justify-content-center">
         <div class="card" style="width: 100%; max-width: 28rem;">
             <img src="/Merry-Cobbler-Project/img/deluxe8.jpeg" class="card-img-top" alt="...">
@@ -249,36 +250,16 @@ import Footer from "../components/Footer.astro"
 
 
 <style>
-
-    .container-fluid {
-       
-    background-color: rgba(20,22,41,1);
-    text-align: end;
-    padding: 0;
-    margin-top: 7%;
-    margin-right: ;
-
-       
-    }
-  
-    
-    .carousel-inner img {
-        width: 100%;
-        max-height: 500px;
-        object-fit:contain;
-    }
-
-    
     .back-button {
         position:relative;
-        right: 20px;
-        margin-top: 20px;
         background-color: rgba(20,22,41,1);
         color: #fff;
+        right: 5px;
+        top: 10px;
         padding: 10px 16px;
         border-radius: 6px;
         text-decoration: none;
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-family: "Prosto One", sans-serif;
         z-index: 1000;
         box-shadow:0 4px 10px rgba(0,0,0,0.2);
@@ -288,6 +269,21 @@ import Footer from "../components/Footer.astro"
         background-color: #b3a116;
     }
 
+    .container-fluid {
+       
+    background-color: rgba(20,22,41,1);
+    padding: 20px;
+    margin-top: 20px;
+    }
+  
+    
+    .carousel-inner img {
+        width: 100%;
+        max-height: 500px;
+        object-fit:contain;
+    }
+
+
     .col {
         justify-items: center;
         margin-top: 50px;
@@ -296,23 +292,12 @@ import Footer from "../components/Footer.astro"
     h1 {
         font-size: 2.5rem;
         font-family: "Prosto One", sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-style: normal;
         color: #fff;
-        margin-top: 3%;
-    
     }
 
-    h2 {
-        font-size: 1.7rem;
-        font-family: "Prosto One", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        color: #fff;
-        margin-bottom: 3%;
-    }
-
-    h5, p, li, a {
+    h5, p, li, .btn {
         font-size: 1.3rem;
         font-family: "Prosto One", sans-serif;
         font-weight: 600;
@@ -335,7 +320,7 @@ import Footer from "../components/Footer.astro"
         font-size: 0.8rem;
     }
 
-    a {
+    .btn {
         font-size: 0.8rem;
         color: aliceblue;
     }
@@ -344,32 +329,75 @@ import Footer from "../components/Footer.astro"
          box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1440px) {
+    
+    .container-fluid {
+    padding: 30px;
 
-    h1, h2 {
-    font-size: 1.3rem;
+    }
+
+    h1 {
+    font-size: 2rem;
    
     }
 
     .back-button {
-    font-size: 0.5rem;
-    margin-right: 50px;
+    font-size: 0.7rem;
+    margin: 0;
     }
 
+    }
+
+    @media screen and (max-width:768px) {
+
+    .container-fluid {
+    padding: 20px;
+    }
+
+    h1 {
+    font-size: 1.3rem;
+    }
+
+    .back-button {
+    font-size: 0.6rem;
+    margin: 0;
+    }
+
+    .col {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    }
+
+    h6 {
+    font-size: 0.7rem;
+        
+    }
+
+    h5 {
+    font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    li {
+        font-size: 0.7rem;
+    }
     }
 
     @media screen and (max-width:425px) {
+    
 
-    h1, h2 {
+    h1 {
     font-size: 1rem;
    
     }
 
     .back-button {
     font-size: 0.5rem;
-    margin-right: 50px;
+    margin: 0;
     }
-
 
     }
 
